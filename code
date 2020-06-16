@@ -1,0 +1,176 @@
+import java.util.*;
+public class HotelManagementSystem{
+			public static void main(String [] re)
+			{
+		
+					System.out.println("\t\t\tWelcome to The Hotel Management System\t\t\t\t\t\t\n");
+
+					System.out.println("\t\t\t* * * * * * * * * * * * * * * * * \t\t\t\t\t\t\n");
+					System.out.println("\t\t\tIn which city do you want to book hotel\t\t\t\t\n");
+
+					String[] citylist = new String[] {"New Delhi","Patna","Jaladhar","Kanpur","Mumbai"};
+					for (int i = 0; i < citylist.length; i++)
+  					System.out.println("\t\t\t"+ (i+1)+" . " + citylist[i] +"\n");
+
+					Scanner input = new Scanner(System.in);
+    	
+    					System.out.print("\t\t\tSelect The city:\t\t\t\t");
+    					int number = input.nextInt();
+					//System.out.println("You entered " + number);
+
+
+				          
+					if (number == 1){
+					System.out.println("\n\t\t\tkindly choose the hotels.		\tRentAC             RentNonAC\t\t\t\t\n");
+					System.out.println("\t\t\t* * * * * * * * * * * * * * * * * *  * \t\t\t\t\t\t\n");
+
+					String[] hotellist1 = new String[] {"Hotel York 5*           ","Hotel Bright 3*         ","Hotel Viraat 3*          "};
+					int[] intRentAC = new int[]{ 600,450,400, };
+					int[] intRentNonAC = new int[]{400,300,250};
+
+					
+					for (int i = 0; i < intRentAC.length; i++)
+  					System.out.println("\t\t\t"+ (i+1)+" . " + hotellist1[i] +"\t\t\t"+intRentAC[i]+"\t\t\t"+intRentNonAC[i]+"\n");
+
+					Scanner iput = new Scanner(System.in);
+    					System.out.print("\t\t\tKindly Select Hotel:\t\t\t\t");
+    					int numberr = iput.nextInt();
+
+					Scanner inpt = new Scanner(System.in);
+    					System.out.print("\t\t\tRoom Type:(Enter AC or NON-AC)\t\t\t\t");
+    					String type = inpt.nextLine();
+				
+					Scanner ipt = new Scanner(System.in);
+    					System.out.print("\t\t\tHow Many Rooms you Want to book?:\t\t");
+    					int numbe = ipt.nextInt();
+
+					System.out.println("\t\t\tYou Have booked"+" "+numbe+" "+type.toUpperCase()+" "+"Room in"+" "+hotellist1[numberr-1]);
+					System.out.println("\t\t\tThank You :)");
+					System.out.println("\t\t\tKindly Visit Us Again.");
+
+
+			}
+
+					if (number == 2){
+					System.out.println("\n\t\t\tkindly choose the hotels.		\tRentAC             RentNonAC\t\t\t\t\n");
+					System.out.println("\t\t\t* * * * * * * * * * * * * * * * * *  * \t\t\t\t\t\t\n");
+
+					String[] hotellist2 = new String[] {"Hotel HiFi 3*           ","Ankur Villa 3*         ","Hotel Samarth 2*          "};
+					int[] intReentAC = new int[]{ 450,400,300 };
+					int[] intReentNonAC = new int[]{300,250,200};
+
+					
+					for (int i = 0; i < intReentAC.length; i++)
+  					System.out.println("\t\t\t"+ (i+1)+" . " + hotellist2[i] +"\t\t\t"+intReentAC[i]+"\t\t\t"+intReentNonAC[i]+"\n");
+
+					Scanner iput = new Scanner(System.in);
+    					System.out.print("\t\t\tKindly Select Hotel:\t\t\t\t");
+    					int numberrr = iput.nextInt();
+
+					Scanner inpt = new Scanner(System.in);
+    					System.out.print("\t\t\tRoom Type:(Enter AC or NON-AC)\t\t\t\t");
+    					String typee = inpt.nextLine();
+				
+					Scanner ipt = new Scanner(System.in);
+    					System.out.print("\t\t\tHow Many Rooms you Want to book?:\t\t");
+    					int numbee = ipt.nextInt();
+
+					System.out.println("\t\t\tYou Have booked"+" "+numbee+" "+typee.toUpperCase()+" "+"Room in"+" "+hotellist2[numberrr-1]);
+					System.out.println("\t\t\tThank You :)");
+					System.out.println("\t\t\tKindly Visit Us Again.");
+			}
+
+
+					if (number == 3){
+					System.out.println("\n\t\t\tkindly choose the hotels.		\tRentAC             RentNonAC\t\t\t\t\n");
+					System.out.println("\t\t\t* * * * * * * * * * * * * * * * * *  * \t\t\t\t\t\t\n");
+
+					String[] hotellist3 = new String[] {"Great Haveli 5*           ","Singh Dhaba 5*         ","Hotel pataudi 3*          "};
+					int[] intRrentAC = new int[]{ 1000,800,500 };
+					int[] intRrentNonAC = new int[]{700,650,400};
+
+					
+					for (int i = 0; i < intRrentAC.length; i++)
+  					System.out.println("\t\t\t"+ (i+1)+" . " + hotellist3[i] +"\t\t\t"+intRrentAC[i]+"\t\t\t"+intRrentNonAC[i]+"\n");
+
+					Scanner iput = new Scanner(System.in);
+    					System.out.print("\t\t\tKindly Select Hotel:\t\t\t\t");
+    					int nnumberr = iput.nextInt();
+
+					Scanner inpt = new Scanner(System.in);
+    					System.out.print("\t\t\tRoom Type:(Enter AC or NON-AC)\t\t\t\t");
+    					String ttype = inpt.nextLine();
+				
+					Scanner ipt = new Scanner(System.in);
+    					System.out.print("\t\t\tHow Many Rooms you Want to book?:\t\t");
+    					int nnumbe = ipt.nextInt();
+
+					System.out.println("\t\t\tYou Have booked"+" "+nnumbe+" "+ttype.toUpperCase()+" "+"Room in"+" "+hotellist3[nnumberr-1]);
+					System.out.println("\t\t\tThank You :)");
+					System.out.println("\t\t\tKindly Visit Us Again.");
+
+			}
+	
+					if (number == 4){
+					System.out.println("\n\t\t\tkindly choose the hotels.		\tRentAC             RentNonAC\t\t\t\t\n");
+					System.out.println("\t\t\t* * * * * * * * * * * * * * * * * *  * \t\t\t\t\t\t\n");
+
+					String[] hotellist4 = new String[] {"Hotel sundar 5*           ","Bright villa 3*         ","Hotel sehnaaj 3*          "};
+					int[] intRenntAC = new int[]{ 600,450,400, };
+					int[] intRenntNonAC = new int[]{400,300,250};
+
+					
+					for (int i = 0; i < intRenntAC.length; i++)
+  					System.out.println("\t\t\t"+ (i+1)+" . " + hotellist4[i] +"\t\t\t"+intRenntAC[i]+"\t\t\t"+intRenntNonAC[i]+"\n");
+
+					Scanner iput = new Scanner(System.in);
+    					System.out.print("\t\t\tKindly Select Hotel:\t\t\t\t");
+    					int nummberr = iput.nextInt();
+
+					Scanner inpt = new Scanner(System.in);
+    					System.out.print("\t\t\tRoom Type:(Enter AC or NON-AC)\t\t\t\t");
+    					String typpe = inpt.nextLine();
+				
+					Scanner ipt = new Scanner(System.in);
+    					System.out.print("\t\t\tHow Many Rooms you Want to book?:\t\t");
+    					int nummbe = ipt.nextInt();
+
+					System.out.println("\t\t\tYou Have booked"+" "+nummbe+" "+typpe.toUpperCase()+" "+"Room in"+" "+hotellist4[nummberr-1]);
+					System.out.println("\t\t\tThank You :)");
+					System.out.println("\t\t\tKindly Visit Us Again.");
+			}
+
+					if (number == 5){
+					System.out.println("\n\t\t\tkindly choose the hotels.		\tRentAC             RentNonAC\t\t\t\t\n");
+					System.out.println("\t\t\t* * * * * * * * * * * * * * * * * *  * \t\t\t\t\t\t\n");
+
+					String[] hotellist5 = new String[] {"Ararimu BnB 5*           ","Hotel Taj 5*         ","Hotel love 3*          "};
+					int[] intRenttAC = new int[]{ 1200,1500,1000, };
+					int[] intRenttNonAC = new int[]{900,1000,600};
+
+					
+					for (int i = 0; i < intRenttAC.length; i++)
+  					System.out.println("\t\t\t"+ (i+1)+" . " + hotellist5[i] +"\t\t\t"+intRenttAC[i]+"\t\t\t"+intRenttNonAC[i]+"\n");
+
+					Scanner iput = new Scanner(System.in);
+    					System.out.print("\t\t\tKindly Select Hotel:\t\t\t\t");
+    					int numbberr = iput.nextInt();
+
+					Scanner inpt = new Scanner(System.in);
+    					System.out.print("\t\t\tRoom Type:(Enter AC or NON-AC)\t\t\t\t");
+    					String typer = inpt.nextLine();
+				
+					Scanner ipt = new Scanner(System.in);
+    					System.out.print("\t\t\tHow Many Rooms you Want to book?:\t\t");
+    					int numbbe = ipt.nextInt();
+
+					System.out.println("\t\t\tYou Have booked"+" "+numbbe+" "+typer.toUpperCase()+" "+"Room in"+" "+hotellist5[numbberr-1]);
+					System.out.println("\t\t\tThank You :)");
+					System.out.println("\t\t\tKindly Visit Us Again.");
+		
+			}
+
+					
+
+			}
+			}
